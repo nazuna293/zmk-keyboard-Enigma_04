@@ -1,0 +1,15 @@
+#include "Enigma_04.dtsi"
+
+&transform_0 {
+    col-offset = <5>;
+};
+
+&kscan_0 {
+        col-gpios
+            = <&gpio GPIO_ACTIVE_HIGH>
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH>
+            ;
+};
