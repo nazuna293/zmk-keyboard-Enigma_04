@@ -1,0 +1,5 @@
+config SHIELD_Enigma_04_L
+    def_bool $(shields_list_contains,Enigma_04_L)
+
+config SHIELD_Enigma_04_R
+    def_bool $(shields_list_contains,Enigma_04_R)
