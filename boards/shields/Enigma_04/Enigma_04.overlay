@@ -1,0 +1,15 @@
+#include "Enigma_04.dtsi"
+
+&kscan_0 {
+        col-gpios
+            = <&gpio GPIO_ACTIVE_HIGH>
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH> 
+            , <&gpio GPIO_ACTIVE_HIGH>
+            ;
+};
+
+&encoder_0 {
+    status = "okay";
+};
