@@ -1,6 +1,6 @@
 {
   "layouts": {
-    " layout_a": {
+    " layout_0": {
       "layout": [
         {"row": 0, "col": 1, "x": 1, "y": 1},
         {"row": 0, "col": 2, "x": 2, "y": 1},
