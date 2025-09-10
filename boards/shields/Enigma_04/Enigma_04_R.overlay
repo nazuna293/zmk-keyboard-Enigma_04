@@ -13,3 +13,7 @@
             , <&gpio GPIO_ACTIVE_HIGH>
             ;
 };
+
+&encoder_0 {
+    status = "okay";
+};
