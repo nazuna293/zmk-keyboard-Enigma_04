@@ -1,6 +1,28 @@
-if SHIELD_Enigma_04
+if SHIELD_Enigma_04_L
 
 config ZMK_KEYBOARD_NAME
     default "Enigma_04"
+
+config ZMK_BLE
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_Enigma_04_L || SHIELD_Enigma_04_R
+
+config NFCT_PINS_AS_GPIOS
+    default y
+
+config ZMK_SPLIT
+    default y
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    default 30
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    default 10
 
 endif
