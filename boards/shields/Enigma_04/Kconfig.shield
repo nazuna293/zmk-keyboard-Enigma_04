@@ -1,11 +1,11 @@
-config SHIELD_Enigma_04_L_o
-    def_bool $(shields_list_contains,Enigma_04_L_o)
+config SHIELD_Enigma_04_L
+    def_bool $(shields_list_contains,Enigma_04_L)
 
-config SHIELD_Enigma_04_R_o
-    def_bool $(shields_list_contains,Enigma_04_R_o)
+config SHIELD_Enigma_04_R
+    def_bool $(shields_list_contains,Enigma_04_R)
 
-config SHIELD_Enigma_04_L_q
-    def_bool $(shields_list_contains,Enigma_04_L_q)
+config SHIELD_Enigma_04_OONISHI
+    def_bool $(shields_list_contains,Enigma_04_OONISHI)
 
-config SHIELD_Enigma_04_R_q
-    def_bool $(shields_list_contains,Enigma_04_R_q)
+config SHIELD_Enigma_04_QWERTY
+    def_bool $(shields_list_contains,Enigma_04_QWERTY)
