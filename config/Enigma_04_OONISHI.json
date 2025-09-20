@@ -36,7 +36,7 @@
   "sensors": [
     {
       "ref": "encoder_left",
-      "name": "Left_RotaryEncoder",
+      "name": "Left_Encoder",
       "identifier": "encoder_left",
       "compatible": "alps,ec11",
       "enabled": true
