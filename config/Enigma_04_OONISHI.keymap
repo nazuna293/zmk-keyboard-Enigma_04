@@ -99,11 +99,10 @@
 
         Default_US {
             bindings = <
-                &tp_hz_mo_kn  &tp_f7_mo_f8
-                &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O                    
-&kp A           &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT                  &kp SLASH
-            >;
+&kp Q          &kp L         &kp U         &kp COMMA    &kp DOT       &kp F          &kp W        &kp R            &kp Y        &kp P            
+&kp E          &kp I         &kp A         &kp O        &kp MINUS     &kp K          &kp T        &kp N            &kp S        &kp H            
+&kp Z          &kp X         &kp C         &kp V        &kp SLASH     &kp G          &kp D        &kp M            &kp J        &kp B            
+                 >;
 
             sensor-bindings = <&scroll_up_down>;
         };
