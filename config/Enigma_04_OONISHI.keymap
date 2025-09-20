@@ -92,11 +92,11 @@
             bindings = <&lt 5 TILDE>;
         };
 
-        tp_space_mo_slash: tp_space_mo_slash {
+        tp_space_mo_slash_mo: tp_space_mo_slash_mo {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_SPACE_MO_SLASH";
+            label = "TP_SPACE_MO_SLASH_MO";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&kp SLASH>;
+            bindings = <&lt 1 SPACE>, <&lt 2 SLASH>;
         };
     };
 
@@ -107,6 +107,11 @@
             bindings = <&kp ENTER>;
             key-positions = <6 7>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <4 5>;
+        };
     };
 
     keymap {
@@ -114,9 +119,9 @@
 
         Default_US {
             bindings = <
-       &kp L  &kp U  &kp COMMA  &kp DOT             &kp F  &kp W  &kp R  &kp Y
-&kp E  &kp I  &kp A  &kp O      &kp MINUS           &kp K  &kp T  &kp N  &kp S  &kp H
-&kp Z  &kp X  &kp C  &kp V      &tp_space_mo_slash  &kp G  &kp D  &kp M  &kp J  &kp B
+       &kp L  &kp U  &kp COMMA  &kp DOT                &kp F  &kp W  &kp R  &kp Y
+&kp E  &kp I  &kp A  &kp O      &kp MINUS              &kp K  &kp T  &kp N  &kp S  &kp H
+&kp Z  &kp X  &kp C  &kp V      &tp_space_mo_slash_mo  &kp G  &kp D  &kp M  &kp J  &kp B
             >;
 
             sensor-bindings = <&scroll_up_down>;
