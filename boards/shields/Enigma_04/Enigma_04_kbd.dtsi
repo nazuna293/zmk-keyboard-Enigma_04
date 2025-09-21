@@ -1,12 +1,12 @@
 #include "Enigma_04_kbd_layouts.dtsi"
 / {
     chosen {
-        zmk,kscan = &kscan_0;
-        zmk,physical-layout = &layout_0;
+        zmk,kscan = &kscan_kbd0;
+        zmk,physical-layout = &layout_kbd0;
         zmk,studio-rpc = &studio_usb;
     };
   
-    transform_0: transform_0 {
+    transform_kbd0: transform_kbd0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <3>;               
@@ -17,7 +17,7 @@
         >;
     };
 
-    transform_1: transform_1 {
+    transform_kbd1: transform_kbd1 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;               
@@ -28,7 +28,7 @@
         >;
     };
 
-    kscan_0: kscan_0 {
+    kscan_kbd0: kscan_kbd0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
             row-gpios
@@ -37,7 +37,7 @@
                   <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    kscan_1: kscan_1 {
+    kscan_kbd1: kscan_kbd1 {
         compatible = "zmk,kscan-gpio-charlieplex";
         interrupt-gpios = <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
