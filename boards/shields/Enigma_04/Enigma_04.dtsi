@@ -41,7 +41,7 @@
             &key_physical_attrs 100 100  100   0 0 0 0 
             &key_physical_attrs 100 100  200   0 0 0 0 
             &key_physical_attrs 100 100  300   0 0 0 0 
-            &key_physical_attrs 100 100  400   0 0 0 0 
+            &key_physical_attrs  70  70  415  15 0 0 0 
             &key_physical_attrs 100 100  600   0 0 0 0 
             &key_physical_attrs 100 100  700   0 0 0 0 
             &key_physical_attrs 100 100  800   0 0 0 0
@@ -66,6 +66,68 @@
             &key_physical_attrs 100 100  800 200 0 0 0
             &key_physical_attrs 100 100  900 200 0 0 0
             &key_physical_attrs 100 100 1000 200 0 0 0
+        >;
+    };
+
+    layout_1: layout_1 {
+        compatible = "zmk,physical-layout";
+        display-name = "Enigma_04";
+        transform = <&transform_0>;
+        kscan = <&kscan_0>;
+
+        keys = <
+            &key_physical_attrs 100 100  100   0 0 0 0 
+            &key_physical_attrs 100 100  200   0 0 0 0 
+            &key_physical_attrs 100 100  300   0 0 0 0 
+            &key_physical_attrs 100 100  400   0 0 0 0 
+            &key_physical_attrs 100 100  600   0 0 0 0 
+            &key_physical_attrs 100 100  700   0 0 0 0 
+            &key_physical_attrs 100 100  800   0 0 0 0
+            &key_physical_attrs 100 100  900   0 0 0 0 
+            &key_physical_attrs 100 100    0 100 0 0 0
+            &key_physical_attrs 100 100  100 100 0 0 0 
+            &key_physical_attrs 100 100  200 100 0 0 0 
+            &key_physical_attrs 100 100  300 100 0 0 0 
+            &key_physical_attrs 100 100  400 100 0 0 0 
+            &key_physical_attrs 100 100  600 100 0 0 0 
+            &key_physical_attrs 100 100  700 100 0 0 0 
+            &key_physical_attrs 100 100  800 100 0 0 0 
+            &key_physical_attrs 100 100  900 100 0 0 0
+            &key_physical_attrs  70  70 1015 115 0 0 0
+            &key_physical_attrs 100 100    0 200 0 0 0 
+            &key_physical_attrs 100 100  100 200 0 0 0
+            &key_physical_attrs 100 100  200 200 0 0 0
+            &key_physical_attrs 100 100  300 200 0 0 0
+            &key_physical_attrs 100 100  400 200 0 0 0
+            &key_physical_attrs 100 100  600 200 0 0 0
+            &key_physical_attrs 100 100  700 200 0 0 0
+            &key_physical_attrs 100 100  800 200 0 0 0
+            &key_physical_attrs 100 100  900 200 0 0 0
+            &key_physical_attrs 100 100 1000 200 0 0 0
+        >;
+    };
+
+    layout_2: layout_2 {
+        compatible = "zmk,physical-layout";
+        display-name = "Enigma_04";
+        transform = <&transform_0>;
+        kscan = <&kscan_0>;
+
+        keys = <
+            &key_physical_attrs 100 100  100   0 0 0 0 
+            &key_physical_attrs 100 100  200   0 0 0 0 
+            &key_physical_attrs 100 100  300   0 0 0 0 
+            &key_physical_attrs 100 100  400   0 0 0 0  
+            &key_physical_attrs 100 100    0 100 0 0 0
+            &key_physical_attrs 100 100  100 100 0 0 0 
+            &key_physical_attrs 100 100  200 100 0 0 0 
+            &key_physical_attrs 100 100  300 100 0 0 0 
+            &key_physical_attrs 100 100  400 100 0 0 0 
+            &key_physical_attrs 100 100    0 200 0 0 0 
+            &key_physical_attrs 100 100  100 200 0 0 0
+            &key_physical_attrs 100 100  200 200 0 0 0
+            &key_physical_attrs 100 100  300 200 0 0 0
+            &key_physical_attrs 100 100  400 200 0 0 0
         >;
     };
 };
