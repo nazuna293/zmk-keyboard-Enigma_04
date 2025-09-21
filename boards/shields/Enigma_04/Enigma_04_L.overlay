@@ -1,6 +1,6 @@
 #include "Enigma_04_kbd.dtsi"
 
-&kscan_0 {
+&kscan_kbd0 {
         col-gpios = <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
@@ -8,7 +8,7 @@
               <&gpio GPIO_ACTIVE_HIGH>;
 };
 
-&kscan_1 {
+&kscan_kbd1 {
         gpios = <&gpio GPIO_ACTIVE_HIGH>,
                 <&gpio GPIO_ACTIVE_HIGH>,
                 <&gpio GPIO_ACTIVE_HIGH>,
