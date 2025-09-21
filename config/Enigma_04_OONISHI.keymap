@@ -64,18 +64,18 @@
             tap-ms = <20>;
         };
 
-        tp_tab_ctrl_q: tp_tab_ctrl_q {
+        tp_tab_ctrl_l: tp_tab_ctrl_l {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_TAB_CTRL_Q";
+            label = "TP_TAB_CTRL_L";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL TAB>, <&kp Q>;
+            bindings = <&mt LCTRL TAB>, <&kp L>;
         };
 
-        tp_shift_ctrl: tp_shift_ctrl {
+        tp_z_shift_ctrl: tp_z_shift_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_SHIFT_CTRL";
+            label = "TP_Z_SHIFT_CTRL";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp LCTRL>;
+            bindings = <&mt LSHIFT Z>, <&kp LCTRL>;
         };
 
         tp_f7_mo_f8: tp_f7_mo_f8 {
@@ -131,9 +131,9 @@
 
         Default_US {
             bindings = <
-       &kp L  &kp U  &kp COMMA  &kp DOT                &kp F  &kp W  &kp R  &kp Y
-&kp E  &kp I  &kp A  &kp O      &kp MINUS              &kp K  &kp T  &kp N  &kp S  &kp H
-&kp Z  &kp X  &kp C  &kp V      &tp_space_mo_slash_mo  &kp G  &kp D  &kp M  &kp J  &kp B
+                  &tp_tab_ctrl_l  &kp U  &kp COMMA  &kp DOT                &kp F  &kp W  &kp R  &kp Y
+&kp E             &kp I           &kp A  &kp O      &kp MINUS              &kp K  &kp T  &kp N  &kp S  &kp H
+&tp_z_shift_ctrl  &kp X           &kp C  &kp V      &tp_space_mo_slash_mo  &kp G  &kp D  &kp M  &kp J  &kp B
             >;
 
             sensor-bindings = <&scroll_up_down>;
