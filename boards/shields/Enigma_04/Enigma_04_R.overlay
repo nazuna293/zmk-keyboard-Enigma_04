@@ -1,4 +1,4 @@
-#include "Enigma_04.dtsi"
+#include "Enigma_04_kbd.dtsi"
 
 &transform_0 {
     col-offset = <5>;
@@ -11,4 +11,16 @@
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>;
+};
+
+&transform_1 {
+    col-offset = <5>;
+};
+
+&kscan_1 {
+        gpios = <&gpio GPIO_ACTIVE_HIGH>,
+                <&gpio GPIO_ACTIVE_HIGH>,
+                <&gpio GPIO_ACTIVE_HIGH>,
+                <&gpio GPIO_ACTIVE_HIGH>,
+                <&gpio GPIO_ACTIVE_HIGH>;
 };
