@@ -2,10 +2,6 @@
 #include "Enigma_04_tbm_layouts.dtsi"
 
 / {
-    chosen {
-        zmk,kscan = &kscan_tbm0;
-    };
-  
     transform_tbm0: transform_tbm0 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
