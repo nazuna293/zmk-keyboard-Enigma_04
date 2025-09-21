@@ -1,11 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    layout_2: layout_2 {
+    layout_tbm0: layout_tbm0 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_2>;
-        kscan = <&kscan_2>;
+        transform = <&transform_tbm0>;
+        kscan = <&kscan_tbm0>;
 
         keys = <
             &key_physical_attrs 100 100  100   0 0 0 0 
@@ -25,11 +25,31 @@
         >;
     };
 
-    layout_3: layout_3 {
+    layout_tbm1: layout_tbm1 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_3>;
-        kscan = <&kscan_3>;
+        transform = <&transform_tbm1>;
+        kscan = <&kscan_tbm0>;
+
+        keys = <
+            &key_physical_attrs 100 100  300   0 0 0 0 
+            &key_physical_attrs  70  70  415  15 0 0 0 
+            &key_physical_attrs 100 100    0 100 0 0 0
+            &key_physical_attrs 100 100  300 100 0 0 0 
+            &key_physical_attrs 100 100  400 100 0 0 0 
+            &key_physical_attrs 100 100    0 200 0 0 0 
+            &key_physical_attrs 100 100  100 200 0 0 0
+            &key_physical_attrs 100 100  200 200 0 0 0
+            &key_physical_attrs 100 100  300 200 0 0 0
+            &key_physical_attrs 100 100  400 200 0 0 0
+        >;
+    };
+
+    layout_tbm2: layout_tbm2 {
+        compatible = "zmk,physical-layout";
+        display-name = "Enigma_04";
+        transform = <&transform_tbm2>;
+        kscan = <&kscan_tbm0>;
 
         keys = <
             &key_physical_attrs  70  70   15  15 0 0 0 
@@ -48,31 +68,12 @@
             &key_physical_attrs 100 100  400 200 0 0 0
         >;
     };
-      layout_4: layout_4 {
+
+    layout_tbm3: layout_tbm3 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_2>;
-        kscan = <&kscan_2>;
-
-        keys = <
-            &key_physical_attrs 100 100  300   0 0 0 0 
-            &key_physical_attrs  70  70  415  15 0 0 0 
-            &key_physical_attrs 100 100    0 100 0 0 0
-            &key_physical_attrs 100 100  300 100 0 0 0 
-            &key_physical_attrs 100 100  400 100 0 0 0 
-            &key_physical_attrs 100 100    0 200 0 0 0 
-            &key_physical_attrs 100 100  100 200 0 0 0
-            &key_physical_attrs 100 100  200 200 0 0 0
-            &key_physical_attrs 100 100  300 200 0 0 0
-            &key_physical_attrs 100 100  400 200 0 0 0
-        >;
-    };
-
-    layout_5: layout_5 {
-        compatible = "zmk,physical-layout";
-        display-name = "Enigma_04";
-        transform = <&transform_3>;
-        kscan = <&kscan_3>;
+        transform = <&transform_tbm3>;
+        kscan = <&kscan_tbm0>;
 
         keys = <
             &key_physical_attrs  70  70   15  15 0 0 0 
