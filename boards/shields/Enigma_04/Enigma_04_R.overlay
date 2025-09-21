@@ -1,26 +1,25 @@
 #include "Enigma_04_kbd.dtsi"
 
-&transform_0 {
+&transform_kbd0 {
     col-offset = <5>;
 };
 
-&kscan_0 {
-        col-gpios
-            = <&gpio GPIO_ACTIVE_HIGH>,
+&kscan_kbd0 {
+        col-gpios= <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>,
               <&gpio GPIO_ACTIVE_HIGH>;
 };
 
-&transform_1 {
+&transform_kbd1 {
     col-offset = <5>;
 };
 
-&kscan_1 {
+&kscan_kbd1 {
         gpios = <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>;
+            <&gpio GPIO_ACTIVE_HIGH>,
+            <&gpio GPIO_ACTIVE_HIGH>,
+            <&gpio GPIO_ACTIVE_HIGH>,
+            <&gpio GPIO_ACTIVE_HIGH>;
 };
