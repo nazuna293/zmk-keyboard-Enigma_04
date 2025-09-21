@@ -112,6 +112,18 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <4 5>;
         };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <8 0>;
+            layers = <0>;
+        };
+
+        p {
+            bindings = <&kp P>;
+            key-positions = <7 17>;
+            layers = <0>;
+        };
     };
 
     keymap {
