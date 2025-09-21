@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,kscan = &kscan_tbm0;
-        zmk,studio-rpc = &studio_usb;
     };
   
     transform_tbm0: transform_tbm0 {
@@ -59,10 +58,6 @@
                 <&gpio GPIO_ACTIVE_HIGH>,
                 <&gpio GPIO_ACTIVE_HIGH>,
                 <&gpio GPIO_ACTIVE_HIGH>;
-    };
-
-    studio_usb: studio_usb {
-        compatible = "zmk,studio-rpc-usb-uart";
     };
 };
 
