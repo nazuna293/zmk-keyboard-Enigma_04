@@ -10,6 +10,11 @@
         zmk,studio-rpc = &studio_usb;
     };
 
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+
     studio_usb: studio_usb {
         compatible = "zmk,studio-rpc-usb-uart";
     };
@@ -54,12 +59,5 @@
         /* while force-awake is acitvated, enable this mode to force sampling per 
            4ms, where the default sampling rate is 8ms. */
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
-    };
-};
-
-/ {
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
     };
 };
