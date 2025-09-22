@@ -8,7 +8,7 @@
 / {
     chosen {
         zmk,kscan = &kscan_tbm0;
-        zmk,physical-layout = &layout_tbmL1;
+        zmk,physical-layout = &layout_mL1;
         zmk,studio-rpc = &studio_usb;
     };
 
