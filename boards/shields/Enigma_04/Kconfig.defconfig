@@ -1,4 +1,4 @@
-if SHIELD_Enigma_04_L
+if SHIELD_Enigma_04_o_L || SHIELD_Enigma_04_q_L
 
 config ZMK_KEYBOARD_NAME
     default "Enigma_04"
@@ -15,7 +15,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_Enigma_04_L || SHIELD_Enigma_04_R
+if SHIELD_Enigma_04_o_L || SHIELD_Enigma_04_o_R || SHIELD_Enigma_04_q_L || SHIELD_Enigma_04_q_R
 
 config NFCT_PINS_AS_GPIOS
     default y
