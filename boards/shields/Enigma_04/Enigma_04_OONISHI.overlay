@@ -1,21 +1,5 @@
 #include "Enigma_04_L.overlay"
 
-/{
-    encoder_left: encoder_left {
-        compatible = "alps,ec11";
-        a-gpios = <&gpio0 2(GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 3(GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <12>;
-        status = "disabled";
-    };
-
-    sensors_0: sensors_0 {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_left>;
-        triggers-per-rotation = <10>;
-    };
-};
-
-&encoder_left {
+&encoder_0 {
     status = "okay";
 };
