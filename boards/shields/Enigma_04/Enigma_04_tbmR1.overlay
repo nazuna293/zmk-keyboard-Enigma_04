@@ -1,12 +1,14 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include "Enigma_04_tbm.dtsi"
+#include "Enigma_04.dtsi"
+#include "Enigma_04_tbm_pinctrl.dtsi"
+#include "Enigma_04_tbm_layouts.dtsi"
 
 / {
     chosen {
-        zmk,kscan = &kscan_tbm1;
-        zmk,physical-layout = &layout_tbm1;
+        zmk,kscan = &kscan_tbmR1;
+        zmk,physical-layout = &layout_tbmR1;
         zmk,studio-rpc = &studio_usb;
     };
 
