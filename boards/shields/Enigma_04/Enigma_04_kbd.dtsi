@@ -34,14 +34,14 @@
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
             row-gpios
-                = <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                  <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                  <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+                = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                  <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                  <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
     kscan_kbd1: kscan_kbd1 {
         compatible = "zmk,kscan-gpio-charlieplex";
-        interrupt-gpios = <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        interrupt-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
     studio_usb: studio_usb {
