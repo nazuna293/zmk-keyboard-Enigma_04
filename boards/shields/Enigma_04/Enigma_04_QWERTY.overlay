@@ -1,5 +1,11 @@
 #include "Enigma_04_R.overlay"
 
+/ {
+    chosen {
+        zmk,physical-layout = &layout_kbd1;
+    };
+};
+
 &encoder_0 {
     status = "okay";
 };
