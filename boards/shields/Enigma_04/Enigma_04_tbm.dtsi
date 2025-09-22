@@ -49,11 +49,11 @@
     kscan_tbm0: kscan_tbm0 {
         compatible = "zmk,kscan-gpio-charlieplex";
         interrupt-gpios = <&gpio (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-                gpios = <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>,
-                <&gpio GPIO_ACTIVE_HIGH>;
+                gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>,
+                <&gpio1 12 GPIO_ACTIVE_HIGH>,
+                <&gpio0 9 GPIO_ACTIVE_HIGH>,
+                <&gpio0 10 GPIO_ACTIVE_HIGH>,
+                <&gpio0 29 GPIO_ACTIVE_HIGH>;
     };
 
     encoder_0: encoder_0 {
