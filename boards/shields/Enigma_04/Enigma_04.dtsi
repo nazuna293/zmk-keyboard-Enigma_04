@@ -41,7 +41,7 @@
         interrupt-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    transform_tbm0: transform_tbm0 {
+    transform_tbmR0: transform_tbmR0 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
         rows = <4>;               
@@ -52,7 +52,7 @@
         >;
     };
 
-    transform_tbm1: transform_tbm1 {
+    transform_tbmR1: transform_tbmR1 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
         rows = <4>;               
@@ -63,7 +63,7 @@
         >;
     };
 
-    transform_tbm2: transform_tbm2 {
+    transform_tbmL0: transform_tbmL0 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
         rows = <4>;               
@@ -74,7 +74,7 @@
         >;
     };
 
-    transform_tbm3: transform_tbm3 {
+    transform_tbmL1: transform_tbmL1 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
         rows = <4>;               
