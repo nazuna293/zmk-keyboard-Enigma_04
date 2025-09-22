@@ -1,4 +1,11 @@
-#include "Enigma_04_kbd.dtsi"
+#include "Enigma_04.dtsi"
+#include "Enigma_04_kbd_layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &kscan_kbd0;
+    };
+};
 
 &kscan_kbd0 {
         col-gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>,
