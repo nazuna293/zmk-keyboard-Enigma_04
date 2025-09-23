@@ -1,10 +1,10 @@
 #include <physical_layouts.dtsi>
 
 / {
-    layout_mR0: layout_mR0 {
+    layout_tbm0: layout_tbm0 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_mR0>;
+        transform = <&transform_tbm0>;
         kscan = <&kscan_tbm0>;
 
         keys = <
@@ -25,10 +25,10 @@
         >;
     };
 
-    layout_mR1: layout_mR1 {
+    layout_tbm1: layout_tbm1 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_mR1>;
+        transform = <&transform_tbm1>;
         kscan = <&kscan_tbm0>;
 
         keys = <
@@ -45,10 +45,10 @@
         >;
     };
 
-    layout_mL0: layout_mL0 {
+    layout_tbm2: layout_tbm2 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_mL0>;
+        transform = <&transform_tbm2>;
         kscan = <&kscan_tbm0>;
 
         keys = <
@@ -69,10 +69,10 @@
         >;
     };
 
-    layout_mL1: layout_mL1 {
+    layout_tbm3: layout_tbm3 {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_04";
-        transform = <&transform_mL1>;
+        transform = <&transform_tbm3>;
         kscan = <&kscan_tbm0>;
 
         keys = <
@@ -92,22 +92,22 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        map_mR0: map_mR0 {
-            physical-layout = <&layout_mR0>;
+        map_tbm0: map_tbm0 {
+            physical-layout = <&layout_tbm0>;
             positions = <0 5>;
         };
 
-        map_mR1: map_mR1 {
-            physical-layout = <&layout_mR1>;
+        map_tbm1: map_tbm1 {
+            physical-layout = <&layout_tbm1>;
             positions = <0 3>;
         };
-        map_mL0: map_mL0 {
-            physical-layout = <&layout_mL0>;
+        map_tbm2: map_tbm2 {
+            physical-layout = <&layout_tbm2>;
             positions = <0 5>;
         };
 
-        map_mL1: map_mL1 {
-            physical-layout = <&layout_mL1>;
+        map_tbm3: map_tbm3 {
+            physical-layout = <&layout_tbm3>;
             positions = <0 3>;
         };
     };
