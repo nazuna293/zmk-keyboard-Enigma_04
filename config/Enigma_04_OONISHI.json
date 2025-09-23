@@ -35,9 +35,9 @@
   },
   "sensors": [
     {
-      "ref": "encoder_left",
+      "ref": "encoder_0",
       "name": "Left_Encoder",
-      "identifier": "encoder_left",
+      "identifier": "encoder_0",
       "compatible": "alps,ec11",
       "enabled": true
     }
