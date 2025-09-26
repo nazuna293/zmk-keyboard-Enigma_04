@@ -12,7 +12,6 @@ config ZMK_BLE
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-
 endif
 
 if SHIELD_Enigma_04_kbd_o_L || SHIELD_Enigma_04_kbd_o_R || SHIELD_Enigma_04_kbd_q_L || SHIELD_Enigma_04_kbd_q_R
@@ -21,39 +20,6 @@ config NFCT_PINS_AS_GPIOS
     default y
 
 config ZMK_SPLIT
-    default y
-
-# Battery
-config ZMK_BATTERY
-	default y
-
-config ZMK_BATTERY_REPORTING
-	default y
-
-config BT_BAS
-	default y
-
-# ZMK studio
-config ZMK_STUDIO
-	default y
-
-config ZMK_STUDIO_LOCKING
-	default n
-
-endif
-
-if SHIELD_Enigma_04_tbm_f_L || SHIELD_Enigma_04_tbm_f_R || SHIELD_Enigma_04_tbm_t_L || SHIELD_Enigma_04_tbm_t_R
-
-config ZMK_KEYBOARD_NAME
-    default "Enigma_04"
-
-config ZMK_USB
-	default y
-
-config ZMK_BLE
-    default y
-
-config NFCT_PINS_AS_GPIOS
     default y
 
 # Battery
